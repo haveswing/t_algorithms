@@ -18,9 +18,9 @@ def pick_color():
 
 randCol = pick_color()
 
-# life = True
+life = 0
 
-for i in range(360):
+for i in range(361):
     random_color = pick_color()
     michelangelo.pencolor(random_color)
     michelangelo.forward(200)
@@ -36,6 +36,9 @@ for i in range(360):
     michelangelo.setposition(0,0)
     michelangelo.pendown()
     michelangelo._rotate(1)
+
+    print(life)
+    life += 1
 
 
 michelangelo.hideturtle()
